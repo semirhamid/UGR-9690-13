@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Check Out</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h1>Merkato Market</h1>
+        <nav>
+          <div>
+            <a href="/">
+              <picture>
+                <img
+                  src="./images/merkatologodark.png"
+                  alt="The merkato market company logo"
+                />
+              </picture>
+            </a>
+            <div>
+              <form
+                role="search"
+                aria-label="search box"
+                action="/Search"
+                title="search box"
+              >
+                <input
+                  type="search"
+                  autocomplete="off"
+                  autoCorrect="off"
+                  autocapitalize="none"
+                  spellcheck="false"
+                  required=""
+                  name="search"
+                  role="searchbox"
+                  aria-label="Search"
+                  aria-controls="typeahead_results"
+                  aria-autocomplete="list"
+                  value=""
+                  placeholder="search anything you want..."
+                />
+
+                <select
+                  name="category"
+                  id="category"
+                  aria-label="category"
+                  id="category"
+                  title="category"
+                >
+                  <option
+                    aria-label="catagoryItem"
+                    value="All"
+                    aria-label="catagoryItem"
+                    selected
+                  >
+                    All
+                  </option>
+                  <option aria-label="catagoryItem" value="Children">
+                    Children
+                  </option>
+                  <option aria-label="catagoryItem" value="Electronics">
+                    Electronics
+                  </option>
+                  <option aria-label="catagoryItem" value="Mobile">
+                    Mobile
+                  </option>
+                  <option aria-label="catagoryItem" value="Appliances">
+                    Appliances
+                  </option>
+                  <option aria-label="catagoryItem" value="Books">Books</option>
+                  <option aria-label="catagoryItem" value="Toys">Toys</option>
+                  <option aria-label="catagoryItem" value="Software">
+                    Software
+                  </option>
+                  <option aria-label="catagoryItem" value="Fashion">
+                    Fashion
+                  </option>
+                  <option aria-label="catagoryItem" value="Kitchen">
+                    Kitchen
+                  </option>
+                  /
+                </select>
+
+                <button
+                  type="submit"
+                  formaction="/Search"
+                  title="submit"
+                  id="submit"
+                  name="submit"
+                  aria-label="Search"
+                  tabindex="-1"
+                  value="Search"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+            <div aria-label="cart">
+              <picture>
+                <img src="./images/cart.png" alt="cart icon" />
+                <p>3</p>
+              </picture>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <a href="/index.html"><p>ALL</p></a>
+              </div>
+              <div>
+                <p>CHILDREN</p>
+              </div>
+              <div>
+                <p>BEAUTY</p>
+              </div>
+              <div>
+                <p>ELECTRONICS</p>
+              </div>
+              <div>
+                <p>APPLIANCES</p>
+              </div>
+              <div>
+                <p>SPORT</p>
+              </div>
+              <div>
+                <p>MUSIC</p>
+              </div>
+              <div>
+                <p>BOOKS</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div >
+        <div >
+          <div >
+            <div >
+              <h1 >Checkout</h1>
+
+              <div >
+                <div ></div>
+                <div ></div>
+                <div></div>
+                <div></div>
+              </div>
+
+              <div >
+                <fieldset>
+                  <legend>Choose payment method</legend>
+                  <label for="card" >
+                    <div >
+                      <img src="./images/visa_logo.png" alt="visa card" />
+                      <img
+                        src="./images/mastercard_logo.png"
+                        alt="master card"
+                      />
+                    </div>
+
+                    <div >
+                      <input id="card" type="radio" name="payment" />
+                      Pay £340.00 with credit card
+                    </div>
+                  </label>
+
+                  <label for="paypal" >
+                    <img src="./images/paypal_logo.png" alt="paypall logo" />
+                    <div>
+                      <input id="paypal" type="radio" name="payment" />
+                      Pay £340.00 with PayPal
+                    </div>
+                  </label>
+                </fieldset>
+              </div>
+
+              <div >
+                <div >
+                  <label for="cardholder">Cardholder's Name</label>
+                  <input type="text" id="cardholder" />
+
+                  <div >
+                    <div>
+                      <label for="date">Valid thru</label>
+                      <input type="text" id="date" placeholder="MM / YY" />
+                    </div>
+
+                    <div>
+                      <label for="verification">CVV / CVC *</label>
+                      <input type="password" id="verification" />
+                    </div>
+                  </div>
+                </div>
+                <div >
+                  <label for="cardnumber">Card Number</label>
+                  <input type="password" id="cardnumber" />
+
+                  <span 
+                    >* CVV or CVC is the card security code, unique three digits
+                    number on the back of your card separate from its
+                    number.</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div >
+              <button >Prev</button>
+              <button >Next</button>
+            </div>
+          </div>
+        </div>
+        <div >
+          <picture>
+            <img src="./images/google trust.avif" alt="secured payment" />
+            <img src="./images/secure.avif" alt="save payment" />
+            <img src="./images/shoppify.avif" alt="verified payment" />
+            <img src="./images/trustmark.avif" alt="secured" />
+          </picture>
+        </div>
+      </div>
+    </main>
+
+     <footer>
+      <div aria-details="returns to the top of the page">Back to Top</div>
+      <div>
+        <section aria-label="services">
+          <p><b>Contact Us</b></p>
+          <p><a href="/contact.html">Leave us a message</a></p>
+          <p>Map</p>
+          <p>Custom Orders</p>
+          <p>Distribute</p>
+          <p>support@merkatomarket.com</p>
+          <p>+011-255-1475</p>
+        </section>
+
+        <section aria-label="services">
+          <p><b>Info</b></p>
+          <p>Search</p>
+          <p><a href="/faq.html">FAQ's</a></p>
+          <p>Delivery Info</p>
+          <p>Refunds and Exchanges</p>
+          <p>Corporate Gifting</p>
+          <p><a href="/about.html">Our principles</a></p>
+          <p>Privacy Policy</p>
+          <p>Terms of Service</p>
+        </section>
+
+        <section aria-label="services">
+          <p><b>Quick Links</b></p>
+          <p><a href="/index.html">Home</a></p>
+          <p><a href="/about.html">Our Story</a></p>
+          <p><a href="/adminstration.html">Management</a></p>
+          <p>Wishlist</p>
+        </section>
+
+        <section aria-label="services">
+          <p><b>Join our mailing list</b></p>
+          <form action="/">
+            <label for="email">
+              Email:
+              <input
+                aria-label="subscription"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email address"
+                title="subscribe to daily email"
+              />
+            </label>
+            <input type="submit" aria-label="subscribe" value="Subscribe" />
+          </form>
+        </section>
+      </div>
+      <div>
+        <a href="" aria-label="licensce">license and agreements</a>
+      </div>
+    </footer>
+  </body>
+</html>
